@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/midia-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJd/rOWpDBlTfM/sXv+qKxYg0K/A3lS/yW/2vG63N5sK3y/3t2z6xR3D5l7u..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -16,9 +17,37 @@
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p> seja bem-vindo(a) novamente.</p>
+                <p> seja bem-vindo(a) novamente. faça o login para acessar sua conta e poder fazer as configuraçoes no seu ambiente</p>
 
-                <form action="login.php" method="post"></form>
+                <form action="login.php" method="post" autocomplete="on">
+               
+                    <div class="campo">
+
+                        <i class="fa-solid fa-user"></i>
+                        
+                        <input type="email" name="login" id="ilogin" placeholder="insira o seu email aqui!" autocomplete="email" required maxlength="45">
+                     <label for="ilogin"> Login</label>
+                    </div>
+
+                    <div class="campo">
+
+                        <i class="fa-solid fa-lock"></i>
+                       
+                        <input type="password" name="senha" id="isenha" placeholder="digite a sua senha aqui!" autocomplete="current-password" required minlength="8" maxlength="30">
+
+                         <label for="isenha">Senha</label>
+                        
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <i class="fa-solid fa-lock"></i>
+                    </a>
+
+
+
+
+
+                </form>
 
             </div>
 
